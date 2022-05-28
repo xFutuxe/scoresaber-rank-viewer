@@ -13,20 +13,30 @@ body {
 #scoreSaberID {
     margin: 0;
     position: absolute;
-    top: 70%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
     opacity: 1;
     border-radius: 10px;
 }
+#submit {
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    opacity: 1;
+    border-radius: 10px;
+}
 #globalRank {
     margin: 0;
     position: absolute;
-    top: 70%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 40px;
+    font-size: 20px;
 }
 #countryRank {
     margin: 0;
@@ -53,7 +63,23 @@ body {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     margin: 0;
     position: absolute;
-    top: 30%;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+#profilePicture {
+    border-radius: 100px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+#name {
+    font-size: 50px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }

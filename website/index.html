@@ -13,27 +13,46 @@
     <title>api testing</title>
 </head>
 <body>
-    <p id="name"></p>
-    <img id="profilePicture">
-    <br>
-    <p id="countryRank" class="odometer"></p>
-    <br>
-    <p id="playerPP" class="odometer"></p>
-    <br>
-    <p id="playerTotalRankedScore" class="odometer"></p>
-    <br>
-    <p id="playerCountry"></p>
-    <br>
+    <img>
+
 
     <div class="card2">
 
         <p>Player Info</p>
-        <p id="globalRank" class="odometer"></p>
+        <p id="name"></p>
+        <img id="profilePicture">
+        
+        <div id="globalRankCon">
+            <p id="globalRank" class="odometer"></p>
+        </div>
 
+        
+       
+
+        <div id="countryRankCon">
+            <p id="countryRankText">Country Rank:</p>
+            <p id="countryRank" class="odometer"></p>
+        </div>
+        
+        
+        <div id="playerPPCon">
+            <p id="playerPP" class="odometer"></p>
+        </div>
+
+
+        <div id="playerTotalScoreCon">
+            <p id="playerTotalRankedScore" class="odometer"></p>
+        </div>
+        
+        <div id="playerCountryCon">
+            <p id="playerCountry"></p>
+        </div>
+        
+
+
+        <input class="form-control" id="scoreSaberID" type="text" name="ScoreSaber ID" placeholder="Enter ScoreSaber ID" required>
+        <input class="btn btn-primary" id="submit" type="submit" value="Search" onclick="scoreSaber()">
 
     </div>
-
-    <input class="form-control" id="scoreSaberID" type="text" name="ScoreSaber ID" placeholder="Enter ScoreSaber ID" required>
-    <input class="btn btn-primary" id="submit" type="submit" value="Search" onclick="scoreSaber()">
 </body>
 </html>

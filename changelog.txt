@@ -1,3 +1,10 @@
+beta 1.0.2 | 29.05.22
+
+- You can now press enter to submit!
+- On site load a selection of users stats get loaded at random so the site just isnt empty on load.
+
+--------------------------------------------------
+
 beta 1.0.1 | 29.05.22
 
 - font scales down depending on text length e.g name, ranked score, etc

@@ -38,6 +38,22 @@ body {
     transform: translate(-50%, -50%);
     font-size: 20px;
 }
+#countryRankCon {
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#countryRankText {
+    margin: 0;
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 #countryRank {
     margin: 0;
     position: absolute;

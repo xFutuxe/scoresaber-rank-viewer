@@ -5,7 +5,7 @@ function scoreSaber() {
     var scoreSaberId = document.getElementById("scoreSaberID").value
 
   // Fetches API from url
-    url = fetch('https://scoresaber.com/api/player/'+scoreSaberId+'/full')
+    url = fetch('https://scoresaber.com/api/player/'+scoreSaberId+'/full', {mode: 'no-cors'})
   .then(function (response) {
     return response.json();
   })

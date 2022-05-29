@@ -23,8 +23,8 @@ body {
 #submit {
     margin: 0;
     position: absolute;
-    top: 20%;
-    left: 50%;
+    top: 10%;
+    left: 80%;
     transform: translate(-50%, -50%);
     width: 100px;
     opacity: 1;

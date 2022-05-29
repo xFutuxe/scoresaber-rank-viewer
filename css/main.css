@@ -52,7 +52,7 @@ body {
     top: 90% !important;
     left: 60% !important;
     transform: translate(-50%, -50%);
-    font-size: 20px;
+    font-size: 30px;
 }
 #playerTotalScoreText {
     margin: 0;
@@ -119,16 +119,17 @@ body {
     top: 50%;
     left: 20%;
     transform: translate(-50%, -50%);
-    height: 90px;
-    width: 90px;
+    height: 150px;
+    width: 150px;
 }
 #name {
     font-size: 50px;
     margin: 0;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 55%;
     transform: translate(-50%, -50%);
+ 
 }
 #footerNote {
     margin: 0;

@@ -1,5 +1,27 @@
+// Font resizes depending on text length (Not really effecient as it doesn't scale up font but its fine for now)
+function resize_to_fit2() {
+  var fontsize = $('#name').css('font-size');
+  $('#name').css('fontSize', parseFloat(fontsize) - 1);
 
+  if ($('#name').height() >= 60) {
+    resize_to_fit2();
+  }
+}
+
+function resize_to_fit() {
+  var fontsize = $('#playerTotalRankedScore').css('font-size');
+  $('#playerTotalRankedScore').css('fontSize', parseFloat(fontsize) - 1);
+
+  if ($('#playerTotalRankedScore').height() >= 30) {
+    resize_to_fit();
+  }
+
+}
+
+
+// Functions calls when Submit button is pressed on site
 function scoreSaber() {
+
     //  Fetches value from input box
     var scoreSaberId = document.getElementById("scoreSaberID").value
 
@@ -12,6 +34,7 @@ function scoreSaber() {
       // Collect Data from ScoreSaber API with submitted ID
     console.log(myJson.name); // Player Name
     document.getElementById("name").innerHTML = myJson.name + " | " + myJson.country
+    resize_to_fit2();
     var globalRank = myJson.rank
     var countryRank = myJson.countryRank
     var pp = myJson.pp
@@ -33,12 +56,9 @@ function scoreSaber() {
       document.getElementById("playerPP").innerHTML = pp;
     }, 100);
     setTimeout(function(){
-      document.getElementById("playerTotalScore").innerHTML = totalScore;
-    }, 100);
-    setTimeout(function(){
       document.getElementById("playerTotalRankedScore").innerHTML = totalRankedScore;
     }, 100);
-    
+    resize_to_fit();
   })
   .catch(function (error) {
     console.log("Error: " + error);

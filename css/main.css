@@ -13,7 +13,7 @@ body {
 #scoreSaberID {
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;

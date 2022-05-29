@@ -11,7 +11,7 @@ function scoreSaber() {
   .then(function (myJson) {
       // Collect Data from ScoreSaber API with submitted ID
     console.log(myJson.name); // Player Name
-    document.getElementById("name").innerHTML = myJson.name
+    document.getElementById("name").innerHTML = myJson.name + " | " + myJson.country
     var globalRank = myJson.rank
     var countryRank = myJson.countryRank
     var pp = myJson.pp

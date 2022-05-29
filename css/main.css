@@ -14,7 +14,7 @@ body {
     margin: 0;
     position: absolute;
     top: 10%;
-    left: 50%;
+    left: 43%;
     transform: translate(-50%, -50%);
     width: 400px;
     opacity: 1;
@@ -24,43 +24,72 @@ body {
     margin: 0;
     position: absolute;
     top: 10%;
-    left: 80%;
+    left: 76%;
     transform: translate(-50%, -50%);
     width: 100px;
     opacity: 1;
     border-radius: 10px;
 }
-#globalRank {
+#playerPP {
     margin: 0;
     position: absolute;
-    top: 80%;
-    left: 50%;
+    top: 90% !important;
+    left: 80% !important;
     transform: translate(-50%, -50%);
     font-size: 20px;
 }
-#countryRankCon {
-    text-align: center;
+#playerPPText {
     margin: 0;
     position: absolute;
-    top: 70%;
-    left: 50%;
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+#playerTotalRankedScore {
+    margin: 0;
+    position: absolute;
+    top: 90% !important;
+    left: 60% !important;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+#playerTotalScoreText {
+    margin: 0;
+    position: absolute;
+    top: 80%;
+    left: 60%;
+    transform: translate(-50%, -50%);  
+}
+#globalRank {
+    margin: 0;
+    position: absolute;
+    top: 90% !important;
+    left: 40% !important;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+#globalRankText {
+    margin: 0;
+    position: absolute;
+    top: 80%;
+    left: 40%;
     transform: translate(-50%, -50%);
 }
 #countryRankText {
     margin: 0;
     position: absolute;
-    top: 68%;
-    left: 50%;
+    top: 80%;
+    left: 20%;
     transform: translate(-50%, -50%);
-    text-align: center;
 }
 #countryRank {
     margin: 0;
     position: absolute;
-    top: 30%;
-    left: 50%;
+    top: 90% !important;
+    left: 20% !important;
     transform: translate(-50%, -50%);
-    font-size: 50px;
+    font-size: 20px;
 }
 .card2 {
     text-align: center;
@@ -96,6 +125,13 @@ body {
     margin: 0;
     position: absolute;
     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#footerNote {
+    margin: 0;
+    position: absolute;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
 }

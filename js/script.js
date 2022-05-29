@@ -1,11 +1,10 @@
 
-
 function scoreSaber() {
     //  Fetches value from input box
     var scoreSaberId = document.getElementById("scoreSaberID").value
 
   // Fetches API from url
-    url = fetch('https://scoresaber.com/api/player/'+scoreSaberId+'/full')
+    url = fetch('https://radiant-dawn-45124.herokuapp.com/https://scoresaber.com/api/player/'+scoreSaberId+'/full')
   .then(function (response) {
     return response.json();
   })

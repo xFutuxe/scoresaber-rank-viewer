@@ -21,6 +21,13 @@ function resize_to_fit() {
 
 $(document).ready(function() {
 
+   var screenSize = window.matchMedia("(max-width: 500px)")
+   function checkScreenSize(screenSize) {
+     if (screenSize.matches) {
+       alert("Mobile does not work properly. For a better experience please vist on desktop.");
+     }
+   }
+   checkScreenSize();
     scoreSaberOnLoad();
     // Allows you to press enter instead of using the submit button
     $('input').keyup(function(event) {

@@ -23,7 +23,7 @@ $(document).ready(function() {
 
    var screenSize = window.matchMedia("(max-width: 500px)")
    function checkScreenSize(screenSize) {
-     if (screenSize.matches) {
+     if (screenSize == "max-width: 500px") {
        alert("Mobile does not work properly. For a better experience please vist on desktop.");
      }
    }

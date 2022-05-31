@@ -37,6 +37,7 @@ body {
     left: 80% !important;
     transform: translate(-50%, -50%);
     font-size: 20px;
+    letter-spacing: 1px;
 }
 #playerPPText {
     margin: 0;
@@ -45,6 +46,7 @@ body {
     left: 80%;
     transform: translate(-50%, -50%);
     font-size: 20px;
+    letter-spacing: 1px;
 }
 #playerTotalRankedScore {
     margin: 0;
@@ -53,13 +55,15 @@ body {
     left: 60% !important;
     transform: translate(-50%, -50%);
     font-size: 30px;
+    letter-spacing: 1px;
 }
 #playerTotalScoreText {
     margin: 0;
     position: absolute;
     top: 80%;
     left: 60%;
-    transform: translate(-50%, -50%);  
+    transform: translate(-50%, -50%); 
+    letter-spacing: 1px;
 }
 #globalRank {
     margin: 0;
@@ -68,6 +72,7 @@ body {
     left: 40% !important;
     transform: translate(-50%, -50%);
     font-size: 20px;
+    letter-spacing: 1px;
 }
 #globalRankText {
     margin: 0;
@@ -75,6 +80,7 @@ body {
     top: 80%;
     left: 40%;
     transform: translate(-50%, -50%);
+    letter-spacing: 1px;
 }
 #countryRankText {
     margin: 0;
@@ -82,6 +88,7 @@ body {
     top: 80%;
     left: 20%;
     transform: translate(-50%, -50%);
+    letter-spacing: 1px;
 }
 #countryRank {
     margin: 0;
@@ -90,6 +97,7 @@ body {
     left: 20% !important;
     transform: translate(-50%, -50%);
     font-size: 20px;
+    letter-spacing: 1px;
 }
 .card2 {
     text-align: center;
@@ -129,6 +137,7 @@ body {
     top: 50%;
     left: 55%;
     transform: translate(-50%, -50%);
+    letter-spacing: 2px;
  
 }
 #footerNote {
@@ -206,6 +215,7 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         white-space: nowrap;
+        letter-spacing: 2px;
      
     }
     #countryRankText {
@@ -214,7 +224,8 @@ body {
         top: 69%;
         left: 32%;
         transform: translate(-50%, -50%);
-        font-size: 13px;
+        font-size: 16px;
+        letter-spacing: 1px;
     }
     #countryRank {
         margin: 0;
@@ -222,23 +233,27 @@ body {
         top: 76% !important;
         left: 32% !important;
         transform: translate(-50%, -50%);
-        font-size: 13px;
+        font-size: 16px;
+        letter-spacing: 1px;
     }
     #globalRank {
         margin: 0;
         position: absolute;
         top: 76% !important;
-        left: 67% !important;
+        left: 73% !important;
         transform: translate(-50%, -50%);
-        font-size: 13px;
+        font-size: 16px;
+        letter-spacing: 1px;
     }
     #globalRankText {
         margin: 0;
         position: absolute;
         top: 69%;
-        left: 67%;
+        left: 73%;
         transform: translate(-50%, -50%);
-        font-size: 13px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        white-space: nowrap;
     }
     #playerTotalRankedScore {
         margin: 0;
@@ -246,7 +261,8 @@ body {
         top: 93% !important;
         left: 32% !important;
         transform: translate(-50%, -50%);
-        font-size: 13px;
+        font-size: 15px;
+        letter-spacing: 1px;
     }
     #playerTotalScoreText {
         margin: 0;
@@ -254,23 +270,26 @@ body {
         top: 86%;
         left: 32%;
         transform: translate(-50%, -50%);  
-        font-size: 13px;
+        font-size: 16px;
+        letter-spacing: 1px;
     }
     #playerPP {
         margin: 0;
         position: absolute;
         top: 93% !important;
-        left: 67% !important;
+        left: 73% !important;
         transform: translate(-50%, -50%);
-        font-size: 13px;
+        font-size: 16px;
+        letter-spacing: 1px;
     }
     #playerPPText {
         margin: 0;
         position: absolute;
         top: 86%;
-        left: 67%;
+        left: 73%;
         transform: translate(-50%, -50%);
-        font-size: 13px;
+        font-size: 16px;
+        letter-spacing: 1px;
     }
     #footerNote {
         margin: 0;

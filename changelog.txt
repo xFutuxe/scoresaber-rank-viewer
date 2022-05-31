@@ -1,4 +1,11 @@
+beta 1.0.4 | 31.05.22
 
+- Design Tweaks:
+    - Name and statistic titles changed to bold with small letter spacing
+    - Font size made bigger for mobile users
+- The 'PP' stat gets rounded instead of having a decimal next to it
+
+---------------------------------------------------
 
 beta 1.0.3 | 31.05.22
 

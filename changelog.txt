@@ -1,3 +1,12 @@
+beta 1.0.5 | 31.05.22
+
+- New hover animations
+    - Search bar and submit button now has animations on hover
+    - Name now has animations on hover
+- Clicking on the username now takes you to their profile on ScoreSaber.
+- Added a second card at top of page showing all players currently registered at https://www.scoresaber.com
+---------------------------------------------------
+
 beta 1.0.4 | 31.05.22
 
 - Design Tweaks:
@@ -30,5 +39,5 @@ beta 1.0 | 29.05.22
 
 Input an ID from https://www.scoresaber.com and hit submit, It will fetch the total score, rank globally and country. With more to come (I think)
 
-- First functional build of this app with no actually use for it (just use original site https:www.scoresaber.com) lol
+- First functional build of this app with no actually use for it (just use original site https://www.scoresaber.com) lol
 - Design overhaul to make it acutally readable

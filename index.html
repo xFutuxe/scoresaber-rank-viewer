@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/odometer-theme-default.css" />
     <link rel="stylesheet" href="css/main.css" />
     <script type="text/javascript" src="js/odometer.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <title>Rank Viewer for Scoresaber</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
     <div class="card2">
 
         <div id="nameCon">
-            <b><p id="name"></p></b>
+            <b><a id="profileLink"><p id="name"></p></a></b>
         </div>
         
         <img id="profilePicture" src="images/placeholder.png">
@@ -51,10 +52,20 @@
         
 
         <input class="form-control" id="scoreSaberID" type="text" name="ScoreSaber ID" placeholder="Enter ScoreSaber ID" required>
-        <input class="btn btn-primary" id="submit" type="submit" value="Search" onclick="scoreSaber()">
+        <button class="btn btn-primary" id="submit" type="submit" onclick="scoreSaber()"> 
+         <i class="bi bi-search"></i>
+        </button>
+    </div>
+    
+    <div class="card3">
+
+        <p id="cardTitle">Players on ScoreSaber:</p>
+        <b><p id="playerCount" class="odometer"></p></b>
+
     </div>
 
-    <p id="footerNote">beta v1.0.4 | <a href="https://www.xfutuxe.xyz">xfutuxe.xyz</a></p>
+    
+    <p id="footerNote">beta v1.0.5 | <a href="https://www.xfutuxe.xyz">xfutuxe.xyz</a></p>
 
     <p id="changeLogLink"><a href="changelog.txt">Changelog</a></p>
 

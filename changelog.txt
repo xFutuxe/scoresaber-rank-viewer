@@ -5,6 +5,7 @@ beta 1.0.5 | 31.05.22
     - Name now has animations on hover
 - Clicking on the username now takes you to their profile on ScoreSaber.
 - Added a second card at top of page showing all players currently registered at https://www.scoresaber.com
+
 ---------------------------------------------------
 
 beta 1.0.4 | 31.05.22

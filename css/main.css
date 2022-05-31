@@ -134,13 +134,8 @@ body {
     padding: 2em;
     border-radius: 30px;
     width: 100%;
-<<<<<<< Updated upstream
     height: 150px;
     max-width: 350px;
-=======
-    height: 500px;
-    max-width: 800px;
->>>>>>> Stashed changes
     margin: 1em;
     background: rgba(255, 255, 255, 0);
     box-shadow: 0 8px 32px 0 rgba(136, 136, 136, 0.404);
@@ -150,7 +145,6 @@ body {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     margin: 0;
     position: absolute;
-<<<<<<< Updated upstream
     top: 10%;
     left: 50%; 
     transform: translate(-50%, -50%);
@@ -165,12 +159,6 @@ body {
     letter-spacing: 3px;
     white-space: nowrap;
 }
-=======
-    top: 90%;
-    left: 50%; 
-    transform: translate(-50%, -50%);
-}
->>>>>>> Stashed changes
 #profilePicture {
     border-radius: 100px;
     margin: 0;
@@ -365,3 +353,39 @@ body {
         transform: translate(-50%, -50%);
     }
 }
+@media only screen 
+    and (max-height: 800px) {
+        .card3 {
+            text-align: center;
+            background: #000000d0;
+            padding: 2em;
+            border-radius: 30px;
+            width: 100%;
+            height: 100px;
+            max-width: 250px;
+            margin: 1em;
+            background: rgba(255, 255, 255, 0);
+            box-shadow: 0 8px 32px 0 rgba(136, 136, 136, 0.404);
+            backdrop-filter: blur( 100px );
+            -webkit-backdrop-filter: blur( 1px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            margin: 0;
+            position: absolute;
+            top: 7%;
+            left: 50%; 
+            transform: translate(-50%, -50%);
+        }
+        #playerCount {
+            font-size: 10px;
+            letter-spacing: 5px;
+            white-space: nowrap;
+        }
+        #cardTitle {
+            font-size: 12px;
+            letter-spacing: 3px;
+            white-space: nowrap;
+        }
+    }
+
+

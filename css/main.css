@@ -145,3 +145,145 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+@media only screen 
+   and (max-width : 800px) {
+    .card2 {
+        text-align: center;
+        background: #000000d0;
+        padding: 2em;
+        border-radius: 30px;
+        width: 100%;
+        height: 500px;
+        max-width: 300px;
+        margin: 1em;
+        background: rgba(255, 255, 255, 0);
+        box-shadow: 0 8px 32px 0 rgba(136, 136, 136, 0.404);
+        backdrop-filter: blur( 100px );
+        -webkit-backdrop-filter: blur( 1px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%; 
+        transform: translate(-50%, -50%);
+    }
+    #scoreSaberID {
+        margin: 0;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 230px;
+        opacity: 1;
+        border-radius: 10px;
+    }
+    #submit {
+        margin: 0;
+        position: absolute;
+        top: 23%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75px;
+        opacity: 1;
+        border-radius: 10px;
+    }
+    #profilePicture {
+        border-radius: 100px;
+        margin: 0;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 85px;
+        width: 85px;
+    }
+    #name {
+        font-size: 20px;
+        margin: 0;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+     
+    }
+    #countryRankText {
+        margin: 0;
+        position: absolute;
+        top: 69%;
+        left: 32%;
+        transform: translate(-50%, -50%);
+        font-size: 13px;
+    }
+    #countryRank {
+        margin: 0;
+        position: absolute;
+        top: 76% !important;
+        left: 32% !important;
+        transform: translate(-50%, -50%);
+        font-size: 13px;
+    }
+    #globalRank {
+        margin: 0;
+        position: absolute;
+        top: 76% !important;
+        left: 67% !important;
+        transform: translate(-50%, -50%);
+        font-size: 13px;
+    }
+    #globalRankText {
+        margin: 0;
+        position: absolute;
+        top: 69%;
+        left: 67%;
+        transform: translate(-50%, -50%);
+        font-size: 13px;
+    }
+    #playerTotalRankedScore {
+        margin: 0;
+        position: absolute;
+        top: 93% !important;
+        left: 32% !important;
+        transform: translate(-50%, -50%);
+        font-size: 13px;
+    }
+    #playerTotalScoreText {
+        margin: 0;
+        position: absolute;
+        top: 86%;
+        left: 32%;
+        transform: translate(-50%, -50%);  
+        font-size: 13px;
+    }
+    #playerPP {
+        margin: 0;
+        position: absolute;
+        top: 93% !important;
+        left: 67% !important;
+        transform: translate(-50%, -50%);
+        font-size: 13px;
+    }
+    #playerPPText {
+        margin: 0;
+        position: absolute;
+        top: 86%;
+        left: 67%;
+        transform: translate(-50%, -50%);
+        font-size: 13px;
+    }
+    #footerNote {
+        margin: 0;
+        position: absolute;
+        top: 95%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+    }
+    #changeLogLink {
+        margin: 0;
+        position: absolute;
+        top: 95%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+    }
+}

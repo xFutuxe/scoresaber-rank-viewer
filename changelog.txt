@@ -1,4 +1,11 @@
 
+
+beta 1.0.3 | 31.05.22
+
+- Mobile support is now avaliable. (If there are any issues with or devices not displaying the website properly please create an issue on discord)
+
+--------------------------------------------------
+
 beta 1.0.2 | 29.05.22
 
 - You can now press enter to submit!

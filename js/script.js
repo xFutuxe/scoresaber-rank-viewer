@@ -1,1 +1,133 @@
-function _0x4a17(_0x17847f,_0xb87da7){var _0x1da7cb=_0x1da7();return _0x4a17=function(_0x4a17b3,_0x38a8ea){_0x4a17b3=_0x4a17b3-0x66;var _0x302110=_0x1da7cb[_0x4a17b3];return _0x302110;},_0x4a17(_0x17847f,_0xb87da7);}var _0x9c2dbb=_0x4a17;function _0x1da7(){var _0x433f3b=['height','9611GTcNLc','1544EjlVxQ','profilePicture','trunc','10clMgxs','json','playerPP','\x20|\x20','2380626GMrgbn','countryRank','rank','floor','fontSize','globalRank','catch','76561198180044686','1274401Rujykc','517944jPEbcG','font-size','src','random','innerHTML','76561198205370764','value','length','log','name','Error:\x20','totalScore','#playerTotalRankedScore','ready','playerTotalRankedScore','/full','getElementById','76561198308438667','5743221iqcfRq','#name','76561198309885407','https://radiant-dawn-45124.herokuapp.com/https://scoresaber.com/api/player/','keyup','37777401uOWcuy','scoreStats','scoreSaberID','76561198045386379','then','averageRankedAccuracy','country','totalRankedScore','input','5whIWwa','1667716DDOSNA','css'];_0x1da7=function(){return _0x433f3b;};return _0x1da7();}(function(_0x2e5da8,_0x292e34){var _0x1c0f8b=_0x4a17,_0x16352f=_0x2e5da8();while(!![]){try{var _0x58a4f4=-parseInt(_0x1c0f8b(0x86))/0x1+parseInt(_0x1c0f8b(0x87))/0x2+-parseInt(_0x1c0f8b(0x99))/0x3+-parseInt(_0x1c0f8b(0x73))/0x4+-parseInt(_0x1c0f8b(0x72))/0x5*(-parseInt(_0x1c0f8b(0x7e))/0x6)+parseInt(_0x1c0f8b(0x76))/0x7*(-parseInt(_0x1c0f8b(0x77))/0x8)+-parseInt(_0x1c0f8b(0x69))/0x9*(-parseInt(_0x1c0f8b(0x7a))/0xa);if(_0x58a4f4===_0x292e34)break;else _0x16352f['push'](_0x16352f['shift']());}catch(_0xd249f0){_0x16352f['push'](_0x16352f['shift']());}}}(_0x1da7,0xefdea));function resize_to_fit2(){var _0x29f606=_0x4a17,_0x21da82=$(_0x29f606(0x9a))[_0x29f606(0x74)](_0x29f606(0x88));$(_0x29f606(0x9a))[_0x29f606(0x74)]('fontSize',parseFloat(_0x21da82)-0x1),$(_0x29f606(0x9a))['height']()>=0x3c&&resize_to_fit2();}function resize_to_fit(){var _0x21c851=_0x4a17,_0x517fa8=$(_0x21c851(0x93))[_0x21c851(0x74)](_0x21c851(0x88));$('#playerTotalRankedScore')['css'](_0x21c851(0x82),parseFloat(_0x517fa8)-0x1),$(_0x21c851(0x93))[_0x21c851(0x75)]()>=0x1e&&resize_to_fit();}$(document)[_0x9c2dbb(0x94)](function(){var _0x2671df=_0x9c2dbb;scoreSaberOnLoad(),$(_0x2671df(0x71))[_0x2671df(0x68)](function(_0xd4e8bf){_0xd4e8bf['which']===0xd&&scoreSaber();});});var scoresaberIDs=['76561198333869741',_0x9c2dbb(0x6c),_0x9c2dbb(0x98),_0x9c2dbb(0x66),'2769016623220259',_0x9c2dbb(0x8c),_0x9c2dbb(0x85)];const random=Math[_0x9c2dbb(0x81)](Math[_0x9c2dbb(0x8a)]()*scoresaberIDs[_0x9c2dbb(0x8e)]);console[_0x9c2dbb(0x8f)](scoresaberIDs[random]);function scoreSaberOnLoad(){var _0x3a8eb1=_0x9c2dbb;url=fetch('https://radiant-dawn-45124.herokuapp.com/https://scoresaber.com/api/player/'+scoresaberIDs[random]+'/full')['then'](function(_0x3fbfbb){var _0x426be3=_0x4a17;return _0x3fbfbb[_0x426be3(0x7b)]();})[_0x3a8eb1(0x6d)](function(_0x578c21){var _0x565c18=_0x3a8eb1;console[_0x565c18(0x8f)](_0x578c21['name']),document['getElementById'](_0x565c18(0x90))[_0x565c18(0x8b)]=_0x578c21['name']+_0x565c18(0x7d)+_0x578c21['country'],resize_to_fit2();var _0x2d7518=_0x578c21[_0x565c18(0x80)],_0x5c30b2=_0x578c21[_0x565c18(0x7f)],_0x17c93c=_0x578c21['pp'],_0x534563=Math[_0x565c18(0x79)](_0x17c93c),_0x1b6a96=_0x578c21[_0x565c18(0x6f)],_0x581d6b=_0x578c21[_0x565c18(0x92)],_0x7f9090=_0x578c21[_0x565c18(0x6a)][_0x565c18(0x70)],_0x243e5d=_0x578c21[_0x565c18(0x6a)][_0x565c18(0x6e)],_0x3796f8=_0x578c21[_0x565c18(0x78)];document['getElementById']('profilePicture')[_0x565c18(0x89)]=_0x3796f8,setTimeout(function(){var _0x48562c=_0x565c18;document['getElementById'](_0x48562c(0x83))[_0x48562c(0x8b)]=_0x2d7518;},0x64),setTimeout(function(){var _0x579e0b=_0x565c18;document[_0x579e0b(0x97)](_0x579e0b(0x7f))[_0x579e0b(0x8b)]=_0x5c30b2;},0x64),setTimeout(function(){var _0x37f475=_0x565c18;document[_0x37f475(0x97)](_0x37f475(0x7c))[_0x37f475(0x8b)]=_0x534563;},0x64),setTimeout(function(){var _0x3c6c00=_0x565c18;document[_0x3c6c00(0x97)](_0x3c6c00(0x95))[_0x3c6c00(0x8b)]=_0x7f9090;},0x64),resize_to_fit();})[_0x3a8eb1(0x84)](function(_0x4c483e){var _0x290242=_0x3a8eb1;console[_0x290242(0x8f)](_0x290242(0x91)+_0x4c483e);});}function scoreSaber(){var _0x275d73=_0x9c2dbb,_0x316991=document['getElementById'](_0x275d73(0x6b))[_0x275d73(0x8d)];url=fetch(_0x275d73(0x67)+_0x316991+_0x275d73(0x96))['then'](function(_0x4bff52){return _0x4bff52['json']();})[_0x275d73(0x6d)](function(_0x360f79){var _0x231d11=_0x275d73;console[_0x231d11(0x8f)](_0x360f79['name']),document[_0x231d11(0x97)](_0x231d11(0x90))[_0x231d11(0x8b)]=_0x360f79[_0x231d11(0x90)]+_0x231d11(0x7d)+_0x360f79[_0x231d11(0x6f)],resize_to_fit2();var _0x5c3e41=_0x360f79[_0x231d11(0x80)],_0x4019aa=_0x360f79['countryRank'],_0x14c513=_0x360f79['pp'],_0x2c821e=_0x360f79['country'],_0x3f75b4=_0x360f79[_0x231d11(0x92)],_0x580d8e=_0x360f79[_0x231d11(0x6a)]['totalRankedScore'],_0x16faa4=_0x360f79['scoreStats'][_0x231d11(0x6e)],_0x28079b=_0x360f79[_0x231d11(0x78)];document[_0x231d11(0x97)](_0x231d11(0x78))[_0x231d11(0x89)]=_0x28079b,setTimeout(function(){var _0x47d4a2=_0x231d11;document[_0x47d4a2(0x97)](_0x47d4a2(0x83))[_0x47d4a2(0x8b)]=_0x5c3e41;},0x64),setTimeout(function(){var _0x1f93a8=_0x231d11;document[_0x1f93a8(0x97)](_0x1f93a8(0x7f))[_0x1f93a8(0x8b)]=_0x4019aa;},0x64),setTimeout(function(){var _0x4f49e9=_0x231d11;document[_0x4f49e9(0x97)]('playerPP')[_0x4f49e9(0x8b)]=_0x14c513;},0x64),setTimeout(function(){var _0x22912d=_0x231d11;document['getElementById']('playerTotalRankedScore')[_0x22912d(0x8b)]=_0x580d8e;},0x64),resize_to_fit();})[_0x275d73(0x84)](function(_0x4f42e3){var _0x1e15cf=_0x275d73;console[_0x1e15cf(0x8f)](_0x1e15cf(0x91)+_0x4f42e3);});}
+
+// Font resizes depending on text length (Not really effecient as it doesn't scale up font but its fine for now)
+function resize_to_fit2() {
+    var fontsize = $('#name').css('font-size');
+    $('#name').css('fontSize', parseFloat(fontsize) - 1);
+  
+    if ($('#name').height() >= 60) {
+      resize_to_fit2();
+    }
+  }
+  
+  function resize_to_fit() {
+    var fontsize = $('#playerTotalRankedScore').css('font-size');
+    $('#playerTotalRankedScore').css('fontSize', parseFloat(fontsize) - 1);
+  
+    if ($('#playerTotalRankedScore').height() >= 30) {
+      resize_to_fit();
+    }
+  
+  }
+  
+  $(document).ready(function() {
+  
+      scoreSaberOnLoad();
+      // Allows you to press enter instead of using the submit button
+      $('input').keyup(function(event) {
+          if (event.which === 13)
+          {
+              scoreSaber();
+  
+          }
+      });
+  
+      //On site load ends below here
+  });
+  
+      // Picks a random ID from array
+      var scoresaberIDs = ['76561198333869741', '76561198045386379', '76561198308438667', '76561198309885407', '2769016623220259', '76561198205370764', '76561198180044686']
+      const random = Math.floor(Math.random() * scoresaberIDs.length);
+      console.log(scoresaberIDs[random]);
+  
+  // Functions calls when Submit button is pressed on site
+  function scoreSaberOnLoad() {
+  
+  
+    // Fetches API from url
+      url = fetch('https://radiant-dawn-45124.herokuapp.com/https://scoresaber.com/api/player/'+scoresaberIDs[random]+'/full')
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (myJson) {
+        // Collect Data from ScoreSaber API with submitted ID
+      console.log(myJson.name); // Player Name
+      document.getElementById("name").innerHTML = myJson.name + " | " + myJson.country
+      resize_to_fit2();
+      var globalRank = myJson.rank
+      var countryRank = myJson.countryRank
+      var pp = myJson.pp
+      var roundedPP = Math.trunc(pp)
+      var playerCountry = myJson.country
+      var totalScore = myJson.totalScore
+      var totalRankedScore = myJson.scoreStats.totalRankedScore
+      var accuracy = myJson.scoreStats.averageRankedAccuracy
+      var profilePicture = myJson.profilePicture
+      document.getElementById("profilePicture").src = profilePicture
+    
+      // setTimeout to declare animation for odometer 
+      setTimeout(function(){
+        document.getElementById("globalRank").innerHTML = globalRank;
+      }, 100);
+      setTimeout(function(){
+        document.getElementById("countryRank").innerHTML = countryRank;
+      }, 100);
+      setTimeout(function(){
+        document.getElementById("playerPP").innerHTML = roundedPP;
+      }, 100);
+      setTimeout(function(){
+        document.getElementById("playerTotalRankedScore").innerHTML = totalRankedScore;
+      }, 100);
+      resize_to_fit();
+    })
+    .catch(function (error) {
+      console.log("Error: " + error);
+    });
+    }
+  
+  
+  
+  // Functions calls when Submit button is pressed on site
+  function scoreSaber() {
+  
+      //  Fetches value from input box
+      var scoreSaberId = document.getElementById("scoreSaberID").value
+  
+    // Fetches API from url
+      url = fetch('https://radiant-dawn-45124.herokuapp.com/https://scoresaber.com/api/player/'+scoreSaberId+'/full')
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (myJson) {
+        // Collect Data from ScoreSaber API with submitted ID
+      console.log(myJson.name); // Player Name
+      document.getElementById("name").innerHTML = myJson.name + " | " + myJson.country
+      resize_to_fit2();
+      var globalRank = myJson.rank
+      var countryRank = myJson.countryRank
+      var pp = myJson.pp
+      var playerCountry = myJson.country
+      var totalScore = myJson.totalScore
+      var totalRankedScore = myJson.scoreStats.totalRankedScore
+      var accuracy = myJson.scoreStats.averageRankedAccuracy
+      var profilePicture = myJson.profilePicture
+      document.getElementById("profilePicture").src = profilePicture
+  
+      // setTimeout to declare animation for odometer 
+      setTimeout(function(){
+        document.getElementById("globalRank").innerHTML = globalRank;
+      }, 100);
+      setTimeout(function(){
+        document.getElementById("countryRank").innerHTML = countryRank;
+      }, 100);
+      setTimeout(function(){
+        document.getElementById("playerPP").innerHTML = pp;
+      }, 100);
+      setTimeout(function(){
+        document.getElementById("playerTotalRankedScore").innerHTML = totalRankedScore;
+      }, 100);
+      resize_to_fit();
+    })
+    .catch(function (error) {
+      console.log("Error: " + error);
+    });
+  }

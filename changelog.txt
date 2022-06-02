@@ -1,3 +1,8 @@
+beta 1.0.6 | 02.06.22
+
+- Improved backend script
+---------------------------------------------------
+
 beta 1.0.5 | 31.05.22
 
 - New hover animations

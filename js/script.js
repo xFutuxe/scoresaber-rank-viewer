@@ -1,122 +1,121 @@
-  $(document).ready(function() {
+$(document).ready(function () {
 
-    var url = 'https://radiant-dawn-45124.herokuapp.com/https://scoresaber.com/api/players/count';
-    var storedText;
-    
-    fetch(url)
-      .then(function(response) {
-        response.text().then(function(text) {
-          storedText = text;
-          document.getElementById("playerCount").innerHTML = storedText
-        });
-      });
-    
+  let url = 'https://radiant-dawn-45124.herokuapp.com/https://scoresaber.com/api/players/count';
+  let storedText;
 
-      scoreSaberOnLoad();
-      // Allows you to press enter instead of using the submit button
-      $('input').keyup(function(event) {
-          if (event.which === 13)
-          {
-              scoreSaber();
-  
-          }
+  fetch(url)
+    .then(function (response) {
+      response.text().then(function (text) {
+        storedText = text;
+        document.getElementById("playerCount").innerHTML = storedText
       });
-  
-      //On site load ends below here
+    });
+
+
+  scoreSaberOnLoad();
+  // Allows you to press enter instead of using the submit button
+  $('input').keyup(function (event) {
+    if (event.which === 13) {
+      scoreSaber();
+
+    }
   });
-  
-      // Picks a random ID from array
-      var scoresaberIDs = ['76561198333869741', '76561198045386379', '76561198308438667', '76561198309885407', '2769016623220259', '76561198205370764', '76561198180044686']
-      const random = Math.floor(Math.random() * scoresaberIDs.length);
-      console.log(scoresaberIDs[random]);
-  
-  // Functions calls when Submit button is pressed on site
-  function scoreSaberOnLoad() {
-  
-  
-    // Fetches API from url
-      url = fetch('https://radiant-dawn-45124.herokuapp.com/https://scoresaber.com/api/player/'+scoresaberIDs[random]+'/full')
+
+  //On site load ends below here
+});
+
+// Picks a random ID from array
+let scoresaberIDs = ['76561198333869741', '76561198045386379', '76561198308438667', '76561198309885407', '2769016623220259', '76561198205370764', '76561198180044686']
+const random = Math.floor(Math.random() * scoresaberIDs.length);
+console.log(scoresaberIDs[random]);
+
+// Functions calls when Submit button is pressed on site
+function scoreSaberOnLoad() {
+
+
+  // Fetches API from url
+  url = fetch('https://radiant-dawn-45124.herokuapp.com/https://scoresaber.com/api/player/' + scoresaberIDs[random] + '/full')
     .then(function (response) {
       return response.json();
     })
     .then(function (myJson) {
-        // Collect Data from ScoreSaber API with submitted ID
+      // Collect Data from ScoreSaber API with submitted ID
       console.log(myJson.name); // Player Name
       document.getElementById("name").innerHTML = myJson.name + " | " + myJson.country
       document.getElementById("profileLink").href = "https://www.scoresaber.com/u/" + scoresaberIDs[random]
-      var globalRank = myJson.rank
-      var countryRank = myJson.countryRank
-      var pp = myJson.pp
-      var roundedPP = Math.trunc(pp)
-      var playerCountry = myJson.country
-      var totalScore = myJson.totalScore
-      var totalRankedScore = myJson.scoreStats.totalRankedScore
-      var accuracy = myJson.scoreStats.averageRankedAccuracy
-      var profilePicture = myJson.profilePicture
+      let globalRank = myJson.rank
+      let countryRank = myJson.countryRank
+      let pp = myJson.pp
+      let roundedPP = Math.trunc(pp)
+      let playerCountry = myJson.country
+      let totalScore = myJson.totalScore
+      let totalRankedScore = myJson.scoreStats.totalRankedScore
+      let accuracy = myJson.scoreStats.averageRankedAccuracy
+      let profilePicture = myJson.profilePicture
       document.getElementById("profilePicture").src = profilePicture
-    
+
       // setTimeout to declare animation for odometer 
-      setTimeout(function(){
+      setTimeout(function () {
         document.getElementById("globalRank").innerHTML = globalRank;
       }, 100);
-      setTimeout(function(){
+      setTimeout(function () {
         document.getElementById("countryRank").innerHTML = countryRank;
       }, 100);
-      setTimeout(function(){
+      setTimeout(function () {
         document.getElementById("playerPP").innerHTML = roundedPP;
       }, 100);
-      setTimeout(function(){
+      setTimeout(function () {
         document.getElementById("playerTotalRankedScore").innerHTML = totalRankedScore;
       }, 100);
     })
     .catch(function (error) {
       console.log("Error: " + error);
     });
-    }
-  
-  
-  
-  // Functions calls when Submit button is pressed on site
-  function scoreSaber() {
-  
-      //  Fetches value from input box
-      var scoreSaberId = document.getElementById("scoreSaberID").value
-  
-    // Fetches API from url
-      url = fetch('https://radiant-dawn-45124.herokuapp.com/https://scoresaber.com/api/player/'+scoreSaberId+'/full')
+}
+
+
+
+// Functions calls when Submit button is pressed on site
+function scoreSaber() {
+
+  //  Fetches value from input box
+  let scoreSaberId = document.getElementById("scoreSaberID").value
+
+  // Fetches API from url
+  url = fetch('https://radiant-dawn-45124.herokuapp.com/https://scoresaber.com/api/player/' + scoreSaberId + '/full')
     .then(function (response) {
       return response.json();
     })
     .then(function (myJson) {
-        // Collect Data from ScoreSaber API with submitted ID
+      // Collect Data from ScoreSaber API with submitted ID
       console.log(myJson.name); // Player Name
       document.getElementById("name").innerHTML = myJson.name + " | " + myJson.country
       document.getElementById("profileLink").href = "https://www.scoresaber.com/u/" + scoreSaberId
-      var globalRank = myJson.rank
-      var countryRank = myJson.countryRank
-      var pp = myJson.pp
-      var playerCountry = myJson.country
-      var totalScore = myJson.totalScore
-      var totalRankedScore = myJson.scoreStats.totalRankedScore
-      var accuracy = myJson.scoreStats.averageRankedAccuracy
-      var profilePicture = myJson.profilePicture
+      let globalRank = myJson.rank
+      let countryRank = myJson.countryRank
+      let pp = myJson.pp
+      let playerCountry = myJson.country
+      let totalScore = myJson.totalScore
+      let totalRankedScore = myJson.scoreStats.totalRankedScore
+      let accuracy = myJson.scoreStats.averageRankedAccuracy
+      let profilePicture = myJson.profilePicture
       document.getElementById("profilePicture").src = profilePicture
-  
+
       // setTimeout to declare animation for odometer 
-      setTimeout(function(){
+      setTimeout(function () {
         document.getElementById("globalRank").innerHTML = globalRank;
       }, 100);
-      setTimeout(function(){
+      setTimeout(function () {
         document.getElementById("countryRank").innerHTML = countryRank;
       }, 100);
-      setTimeout(function(){
+      setTimeout(function () {
         document.getElementById("playerPP").innerHTML = pp;
       }, 100);
-      setTimeout(function(){
+      setTimeout(function () {
         document.getElementById("playerTotalRankedScore").innerHTML = totalRankedScore;
       }, 100);
     })
     .catch(function (error) {
       console.log("Error: " + error);
     });
-  }
+}

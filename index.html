@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/odometer-theme-default.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -13,6 +17,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <title>Rank Viewer for Scoresaber</title>
 </head>
+
 <body>
     <img>
 
@@ -20,63 +25,66 @@
     <div class="card2">
 
         <div id="nameCon">
-            <b><a id="profileLink"><p id="name"></p></a></b>
+            <b><a id="profileLink">
+                    <p id="name"></p>
+                </a></b>
         </div>
-        
+
         <img id="profilePicture" src="images/placeholder.png">
-        
+
         <div id="globalRankCon">
-            <b><p id="globalRank" class="odometer"></p></b>
+            <b>
+                <p id="globalRank" class="odometer"></p>
+            </b>
             <p id="globalRankText">Global Rank:</p>
         </div>
 
-        
-       
+
+
 
         <div id="countryRankCon">
             <p id="countryRankText">Country Rank:</p>
-            <b><p id="countryRank" class="odometer"></p></b>
+            <b>
+                <p id="countryRank" class="odometer"></p>
+            </b>
         </div>
-        
-        
+
+
         <div id="playerPPCon">
-            <b><p id="playerPP" class="odometer"></p></b>
+            <b>
+                <p id="playerPP" class="odometer"></p>
+            </b>
             <p id="playerPPText">PP:</p>
         </div>
 
 
         <div id="playerTotalScoreCon">
-            <b><p id="playerTotalRankedScore" class="odometer"></p></b>
+            <b>
+                <p id="playerTotalRankedScore" class="odometer"></p>
+            </b>
             <p id="playerTotalScoreText">Ranked Score:</p>
         </div>
-        
 
-        <input class="form-control" id="scoreSaberID" type="text" name="ScoreSaber ID" placeholder="Enter ScoreSaber ID" required>
-        <button class="btn btn-primary" id="submit" type="submit" onclick="scoreSaber()"> 
-         <i class="bi bi-search"></i>
+
+        <input class="form-control" id="scoreSaberID" type="text" name="ScoreSaber ID" placeholder="Enter ScoreSaber ID"
+            required>
+        <button class="btn btn-primary" id="submit" type="submit" onclick="scoreSaber()">
+            <i class="bi bi-search"></i>
         </button>
     </div>
-    
-    <div class="card3">
 
-<<<<<<< Updated upstream
+    <div class="card3">
         <p id="cardTitle">Players on ScoreSaber:</p>
-        <b><p id="playerCount" class="odometer"></p></b>
+        <b>
+            <p id="playerCount" class="odometer"></p>
+        </b>
 
     </div>
 
-    
-    <p id="footerNote">beta v1.0.5 | <a href="https://www.xfutuxe.xyz">xfutuxe.xyz</a></p>
-=======
 
-    <div class="card3">
-        <p id="cardTitle">Song Leaderboard</p>
-    </div>
-
-    <p id="footerNote">beta v1.0.4 | <a href="https://www.xfutuxe.xyz">xfutuxe.xyz</a></p>
->>>>>>> Stashed changes
-
+    <p id="footerNote">beta v1.0.6 | <a href="https://www.xfutuxe.xyz">xfutuxe.xyz</a></p>
     <p id="changeLogLink"><a href="changelog.txt">Changelog</a></p>
 
 </body>
+
 </html>

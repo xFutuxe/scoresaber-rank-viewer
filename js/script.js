@@ -19,12 +19,11 @@ $(document).ready(function () {
       scoreSaber();
 
     }
+
   });
 
   //On site load ends below here
 });
-
-
 
 // Functions calls when Submit button is pressed on site
 function scoreSaberOnLoad() {
@@ -68,7 +67,7 @@ function scoreSaberOnLoad() {
         document.getElementById("countryRank").innerHTML = countryRank;
       }, 100);
       setTimeout(function () {
-        document.getElementById("playerPP").innerHTML = pp;
+        document.getElementById("playerPP").innerHTML = Math.round(pp);
       }, 100);
       setTimeout(function () {
         document.getElementById("playerTotalRankedScore").innerHTML = totalRankedScore;
@@ -77,6 +76,7 @@ function scoreSaberOnLoad() {
     })
     .catch(function (error) {
       console.log(`Error: ${error}`);
+      
     });
 }
 
@@ -87,41 +87,112 @@ function scoreSaber() {
   //  Fetches value from input box
   let scoreSaberId = document.getElementById("scoreSaberID").value
 
-  // Fetches API from url
-  url = fetch('https://radiant-dawn-45124.herokuapp.com/https://scoresaber.com/api/player/' + scoreSaberId + '/full')
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (myJson) {
-      // Collect Data from ScoreSaber API with submitted ID
-      console.log(myJson.name); // Player Name
-      document.getElementById("name").innerHTML = myJson.name + " | " + myJson.country
-      document.getElementById("profileLink").href = "https://www.scoresaber.com/u/" + scoreSaberId
-      let globalRank = myJson.rank
-      let countryRank = myJson.countryRank
-      let pp = myJson.pp
-      let playerCountry = myJson.country
-      let totalScore = myJson.totalScore
-      let totalRankedScore = myJson.scoreStats.totalRankedScore
-      let accuracy = myJson.scoreStats.averageRankedAccuracy
-      let profilePicture = myJson.profilePicture
-      document.getElementById("profilePicture").src = profilePicture
+  if (isNaN(scoreSaberId)) {
+    document.getElementById("alertError").style.visibility = "visible"
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        document.getElementById("alertError").style.visibility = "hidden"
+        alert("Please input a ScoreSaber ID. Found at: https://scoresaber.com/u/{id}")
+     }
+ 
+  } else {
 
-      // setTimeout to declare animation for odometer 
-      setTimeout(function () {
-        document.getElementById("globalRank").innerHTML = globalRank;
-      }, 100);
-      setTimeout(function () {
-        document.getElementById("countryRank").innerHTML = countryRank;
-      }, 100);
-      setTimeout(function () {
-        document.getElementById("playerPP").innerHTML = pp;
-      }, 100);
-      setTimeout(function () {
-        document.getElementById("playerTotalRankedScore").innerHTML = totalRankedScore;
-      }, 100);
-    })
-    .catch(function (error) {
-      console.log("Error: " + error);
-    });
+     // Fetches API from url
+  url = fetch('https://radiant-dawn-45124.herokuapp.com/https://scoresaber.com/api/player/' + scoreSaberId + '/full')
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (myJson) {
+    // Collect Data from ScoreSaber API with submitted ID
+    document.getElementById("alertError").style.visibility = "hidden"
+    console.log(myJson.name); // Player Name
+    document.getElementById("name").innerHTML = myJson.name + " | " + myJson.country
+    document.getElementById("profileLink").href = "https://www.scoresaber.com/u/" + scoreSaberId
+    let globalRank = myJson.rank
+    let countryRank = myJson.countryRank
+    let pp = myJson.pp
+    let playerCountry = myJson.country
+    let totalScore = myJson.totalScore
+    let totalRankedScore = myJson.scoreStats.totalRankedScore
+    let accuracy = myJson.scoreStats.averageRankedAccuracy
+    let profilePicture = myJson.profilePicture
+    let badgesArray = myJson.badges
+    if (typeof badgesArray !== 'undefined' && badgesArray.length > 0) {
+      // the array is defined and has at least one element
+      if (badgesArray.length == 1) {
+        let playerBadgeImage1 = myJson.badges[0].image
+        document.getElementById("image1").src = playerBadgeImage1
+        document.getElementById("image1").style.visibility = "visible";
+        document.getElementById("image2").style.visibility = "hidden";
+        document.getElementById("image3").style.visibility = "hidden";
+        document.getElementById("image4").style.visibility = "hidden";
+      }
+
+      if (badgesArray.length == 2) {
+        let playerBadgeImage1 = myJson.badges[0].image
+        let playerBadgeImage2 = myJson.badges[1].image
+        document.getElementById("image1").src = playerBadgeImage1
+        document.getElementById("image2").src = playerBadgeImage2
+        document.getElementById("image1").style.visibility = "visible";
+        document.getElementById("image2").style.visibility = "visible";
+        document.getElementById("image3").style.visibility = "hidden";
+        document.getElementById("image4").style.visibility = "hidden";
+      }
+
+      if (badgesArray.length == 3) {
+        let playerBadgeImage1 = myJson.badges[0].image
+        let playerBadgeImage2 = myJson.badges[1].image
+        let playerBadgeImage3 = myJson.badges[2].image
+        document.getElementById("image1").src = playerBadgeImage1
+        document.getElementById("image2").src = playerBadgeImage2
+        document.getElementById("image3").src = playerBadgeImage3
+        document.getElementById("image1").style.visibility = "visible";
+        document.getElementById("image2").style.visibility = "visible";
+        document.getElementById("image3").style.visibility = "visible";
+        document.getElementById("image4").style.visibility = "hidden";
+      } 
+
+      if (badgesArray.length >= 4) {
+        let playerBadgeImage1 = myJson.badges[0].image
+        let playerBadgeImage2 = myJson.badges[1].image
+        let playerBadgeImage3 = myJson.badges[2].image
+        let playerBadgeImage4 = myJson.badges[3].image
+        document.getElementById("image1").style.visibility = "visible";
+        document.getElementById("image2").style.visibility = "visible";
+        document.getElementById("image3").style.visibility = "visible";
+        document.getElementById("image4").style.visibility = "visible";
+        document.getElementById("image1").src = playerBadgeImage1
+        document.getElementById("image2").src = playerBadgeImage2
+        document.getElementById("image3").src = playerBadgeImage3
+        document.getElementById("image4").src = playerBadgeImage4
+      }
+
+
+    } else {
+      document.getElementById("image1").style.visibility = "hidden";
+      document.getElementById("image2").style.visibility = "hidden";
+      document.getElementById("image3").style.visibility = "hidden";
+      document.getElementById("image4").style.visibility = "hidden";
+    }
+    document.getElementById("profilePicture").src = profilePicture
+
+    // setTimeout to declare animation for odometer 
+    setTimeout(function () {
+      document.getElementById("globalRank").innerHTML = globalRank;
+    }, 100);
+    setTimeout(function () {
+      document.getElementById("countryRank").innerHTML = countryRank;
+    }, 100);
+    setTimeout(function () {
+      document.getElementById("playerPP").innerHTML = pp;
+    }, 100);
+    setTimeout(function () {
+      document.getElementById("playerTotalRankedScore").innerHTML = totalRankedScore;
+    }, 100);
+  })
+  .catch(function (error) {
+    console.log("Error: " + error);
+  });
+
+  }
+
 }

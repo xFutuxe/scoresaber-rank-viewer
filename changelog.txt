@@ -1,3 +1,12 @@
+beta 1.1.1 | 24.09.22
+
+- First 5 badges are now shown when avaliable (desktop only, mobile soon)
+- Now checks whether you inputting a number, if not error will be shown.
+- Added a "What's this?" modal to try and explain the website's existance
+- Rounds the "pp" number on random user. (Looks better)
+- UI Changes
+---------------------------------------------------
+
 beta 1.1.0 | 23.09.22
 
 - Now fully random player selection on site load (instead of picking from array of manually entered IDs)
@@ -30,7 +39,7 @@ beta 1.0.4 | 31.05.22
 
 beta 1.0.3 | 31.05.22
 
-- Mobile support is now avaliable. (If there are any issues with or devices not displaying the website properly please create an issue on discord)
+- Mobile support is now avaliable. (If there are any issues with or devices not displaying the website properly please create an issue on github)
 
 --------------------------------------------------
 

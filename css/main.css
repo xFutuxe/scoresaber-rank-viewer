@@ -400,6 +400,8 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 13px;
+        white-space: nowrap;
+        overflow: hidden;
     }
 
     #footerNote {

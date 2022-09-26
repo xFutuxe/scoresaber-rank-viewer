@@ -1,3 +1,9 @@
+beta 1.1.2 | 24.09.22
+
+- Fixed mobile UI
+- Input error now goes away after 5 seconds
+---------------------------------------------------
+
 beta 1.1.1 | 24.09.22
 
 - First 5 badges are now shown when avaliable (desktop only, mobile soon)

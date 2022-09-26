@@ -87,13 +87,16 @@ function scoreSaber() {
   //  Fetches value from input box
   let scoreSaberId = document.getElementById("scoreSaberID").value
 
-  if (isNaN(scoreSaberId)) {
+  if (isNaN(scoreSaberId) || scoreSaberId == "") {
     document.getElementById("alertError").style.visibility = "visible"
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         document.getElementById("alertError").style.visibility = "hidden"
         alert("Please input a ScoreSaber ID. Found at: https://scoresaber.com/u/{id}")
      }
- 
+     setTimeout(function(){
+      document.getElementById("alertError").style.visibility = "hidden"
+    }, 5000);
+
   } else {
 
      // Fetches API from url

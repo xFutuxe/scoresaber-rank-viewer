@@ -13,4 +13,4 @@ What is ScoreSaber?
 --------
 Score Saber is a website/mod for the popular VR game Beat Saber please check out the offical website here https://scoresaber.com. For this website I used their API to request data from an ID.
 
-There isn't any good use/purpose for this website. I am only trying to improve my skills in javascript.
+This website was only to take what I already knew about javascript and use it in real world, I am still trying to learn more about web development.

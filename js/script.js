@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  const url = 'https://corsproxy.io/https://scoresaber.com/api/players/count';
+  const url = 'https://scoresaber.com/api/players/count';
   let storedText;
 
   fetch(url)
@@ -36,7 +36,7 @@ function scoreSaberOnLoad() {
   console.log(rndInt)
 
   // Fetches API from url
-  url = fetch('https://corsproxy.io/https://scoresaber.com/api/players?page='+rndInt+'&withMetadata=true')
+  url = fetch('https://scoresaber.com/api/players?page='+rndInt+'&withMetadata=true')
     .then(function (response) {
       return response.json();
     })
@@ -100,7 +100,7 @@ function scoreSaber() {
   } else {
 
      // Fetches API from url
-  url = fetch('https://corsproxy.io/https://scoresaber.com/api/player/' + scoreSaberId + '/full')
+  url = fetch('https://scoresaber.com/api/player/' + scoreSaberId + '/full')
   .then(function (response) {
     return response.json();
   })

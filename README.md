@@ -17,6 +17,11 @@ This website was only to take what I already knew about javascript and use it in
 
 Preview
 ------------
+Some examples IDs to try:
+- 76561198187936410
+- 2429129807113296
+- 76561198333869741
+
 ![](https://i.imgur.com/kmpXcsz.png)
 
 Current Issues

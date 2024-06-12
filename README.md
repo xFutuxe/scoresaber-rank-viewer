@@ -27,4 +27,4 @@ Some examples IDs to try:
 Current Issues
 -------------
 - **API requests bypasses CORS protection |**
-  I am very much aware I should not be bypassing CORS through a proxy but because this is only used to show public data and no real personal information is being passed through the API or Proxy
+  This one is quite important. Although a proxy was needed due to the API not providing CORS headers.

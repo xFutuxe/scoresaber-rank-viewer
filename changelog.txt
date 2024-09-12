@@ -66,5 +66,5 @@ beta 1.0 | 29.05.22
 
 Input an ID from https://www.scoresaber.com and hit submit, It will fetch the total score, rank globally and country. With more to come (I think)
 
-- First functional build of this app with no actually use for it (just use original site https://www.scoresaber.com) lol
-- Design overhaul to make it acutally readable
+- First functional build of this app
+- Design overhaul to make it actually readable
